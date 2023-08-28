@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="form">
+      <span class="success">{{successMessage}}</span>
+      <span class="error">{{failureMessage}}</span>
+      <h2>Deposit</h2>
+      <form [formGroup]="depositForm" (ngSubmit)="onSubmit(accountNumber)">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" formControlName="amount" placeholder="10000" required>
+        <button type="submit">Deposit Funnds</button>
+      </form>
+    </div>
+  </div>

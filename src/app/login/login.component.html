@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="form">
+      <span class="success">{{successMessage}}</span>
+      <span class="error">{{failureMessage}}</span>
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label for="customerId">Customer ID:</label>
+        <input type="text" id="customerId" formControlName="customerId" placeholder="Example: CUST1001" required>
+        <br>
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" formControlName="pin" required>
+        <br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>

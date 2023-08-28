@@ -1,0 +1,104 @@
+<div *ngIf="loggedIn; else notLoggedIn" class="container-loggedin" role="main">
+  <table class="account-table">
+    <caption>Accounts</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Acc. No.</th>
+        <th>Balance</th>
+        <th>Customer ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let account of accounts">
+        <td>{{ account.id }}</td>
+        <td>{{ account.accountNumber }}</td>
+        <td>{{ account.balance }}</td>
+        <td>{{ account.customerId }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table class="account-table">
+    <caption>Customers</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>PIN</th>
+        <th>Email</th>
+        <th>Customer ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.firstName + " " + customer.lastName }}</td>
+        <td>{{ customer.pin }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.customerId }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="account-table">
+    <caption>Transactions</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Transaction ID</th>
+        <th>Amount</th>
+        <th>Date/Time</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.id }}</td>
+        <td>{{ transaction.transactionId }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>{{ transaction.dateTime }}</td>
+        <td>{{ transaction.transactionDescription }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="account-table">
+    <caption>Account Mini Statements</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Transaction ID</th>
+        <th>Amount</th>
+        <th>Date/Time</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let statement of miniStatements">
+        <td>{{ statement.id }}</td>
+        <td>{{ statement.transactionId }}</td>
+        <td>{{ statement.amount }}</td>
+        <td>{{ statement.dateTime }}</td>
+        <td>{{ statement.transactionDescription }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<ng-template #notLoggedIn>
+  <div class="container" role="main">
+    <span>
+      {{ title }}
+  </span>
+  <span>
+      <a routerLink="/signup"> Create Account</a>
+  </span>
+</div>
+</ng-template>
+  
+  
+  
