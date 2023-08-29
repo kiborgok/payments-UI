@@ -1,27 +1,31 @@
-# PaymentsWebApp
+# Payments Web App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+#### Version v1.0.0
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
++ [Description](#description)
++ [Setup Requirements](#setup-requirements)
 
-## Code scaffolding
+## Description
+#### This is an application that enables customers to register and open an account and make transactions. Examples of transactions possible with this web app include: deposits, withdrawals, request for mini-statements, check account balance, and make account to account money transfer
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Setup Requirements
+### Local machine setup
+* Clone this repository to your preferred location in your machine. `git clone https://github.com/kiborgok/payments-UI.git`.
 
-## Running unit tests
+* Navigate to the folder with your preferred editor.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Run `npm intall`
 
-## Running end-to-end tests
+* Run the application `ng serve`
+### Online link
+* Click the link in the about section from your preferred browser.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Licence
 
-## Further help
+Copyright (c) 2022 [Click to view License](LICENSE)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Go Back to the top](#description)
